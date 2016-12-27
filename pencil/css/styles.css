@@ -1,0 +1,19 @@
+body {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #3E1305;
+    color: #FFF;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+footer a {
+    color: #AAA;
+}
+
+footer a:hover {
+    color: #EEE;
+}
