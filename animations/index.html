@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Altering the Page</title>
+
+    <!--MDL framework files-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="lib/mdl-ext.min.css">
+
+    <!--animate.css stylesheet (see https://daneden.github.io/animate.css/)-->
+    <link rel="stylesheet" href="lib/animate.css">
+    
+    <!--your stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Catching Events and Altering the Page</span>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content">
+
+            <div class="controls">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="text" 
+                        id="name-input"
+                        class="mdl-textfield__input" 
+                        autofocus>
+                    <label class="mdl-textfield__label" for="name-input">Enter your name</label>
+                </div>
+                <div>
+                    <div class="mdlext-selectfield mdlext-js-selectfield mdlext-selectfield--floating-label">
+                        <select id="animation-select" class="mdlext-selectfield__select">
+                            <option value="bounce" selected>Bounce</option>
+                            <option value="flash">Flash</option>
+                            <option value="pulse">Pulse</option>
+                            <option value="rubberBand">Rubber Band</option>
+                            <option value="shake">Shake</option>
+                            <option value="swing">Swing</option>
+                            <option value="tada">Tada</option>
+                            <option value="wobble">Wobble</option>
+                            <option value="jello">Jello</option>
+                        </select>
+                        <label class="mdlext-selectfield__label" for="animation-select">choose animation</label>
+                    </div>
+                    <button id="animate-button"
+                        type="button" 
+                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        Animate
+                    </button>
+                </div>
+            </div>
+
+            <p class="name-output mdl-typography--display-3 animated"></p>
+
+        </main>
+
+    </div> <!-- .mdl-layout -->
+
+    <!--MDL JavaScript files-->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="lib/mdl-ext.min.js"></script>
+
+    <!--your application script-->
+    <script src="js/app.js"></script>
+</body>
+</html>
