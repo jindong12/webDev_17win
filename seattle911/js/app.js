@@ -37,8 +37,10 @@ L.tileLayer(osmTiles.url, {
  * marker to the map. remember that each object 
  * has a `latitude` and `longitude` property.
  * also bind a popup to each marker
- * that shows the contents of the `type` and 
- * `address` properties from the object.
+ * that shows the contents of the `type`, `datetime`,
+ * and `address` properties from the object.
+ * format the `datetime` using moment(...).fromNow() to 
+ * get human-friendly time durations (e.g., "an hour ago")
  * See http://leafletjs.com/reference-1.0.2.html#marker
  * for details on creating markers, and see
  * http://leafletjs.com/reference-1.0.2.html#marker-bindpopup
