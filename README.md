@@ -4,4 +4,10 @@
 
 ## About Me
 
-(replace this with a bit of info about yourself)
+1. My name: Jin Dong  
+2. Degree Program: Master of Science in Information Management  
+3. Where I am: Seattle  
+4. Favorite Books: _Stories about Ming Dynasty, Wolf Totem_  
+5. Why took this course: want to learn web design languages  
+6. What hope to learn from this: **web design languages and tools**  
+
