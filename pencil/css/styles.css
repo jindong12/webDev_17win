@@ -17,6 +17,9 @@ body {
 
 header {
     background:linear-gradient(to right, #3E1305, #8A2811);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 header h1{
@@ -30,11 +33,13 @@ header p {
 svg {
     height: 64px;
     fill: #8A2811;
+    padding-top: 20px;
+    padding-right: 1em;
 }
 
 .feature {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .feature-icon {
@@ -69,6 +74,7 @@ footer a:hover {
         background-position: 100% 100%;
         background-size: cover;
         padding-top: 100px;
+        color: black;
     }
 
     header h1 {
