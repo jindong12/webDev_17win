@@ -1,1 +1,21 @@
 /* add style rules here to customize or adjust the MDL styles */
+.mdl-layout {
+        background-image: url(../img/background.jpg);
+}
+
+.mdl-layout .mdl-layout__header,
+.mdl-layout .mdl-layout__drawer-button {
+    color: white;
+}
+
+.mdl-cell > .mdl-card {
+    width: 100%;
+}
+.mdl-card__media  > img {
+    width: 100%;
+}
+
+.mdl-card__title-text, .mdl-layout__header-row > .mdl-layout-title, 
+.mdl-layout__header-row > .mdl-navigation > .mdl-navigation__link {
+    font-weight: 400;
+}
