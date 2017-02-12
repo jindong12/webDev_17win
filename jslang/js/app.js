@@ -15,6 +15,8 @@
  */
 function getName() {
     //return your name as a string
+    var name = "Jin Dong";
+    return name;
 
 }
 
@@ -28,7 +30,9 @@ function getGreeting(name) {
     //return a string with the value "Hello name"
     //where `name` is replaced with the value of
     //the `name` parameter
-
+    var helloname = "Hello ";
+    helloname = helloname + name;
+    return helloname;
 }
 
 /**
@@ -39,6 +43,8 @@ function getGreeting(name) {
 function getBirthdate() {
     //return your birthdate as a string in the
     //the format "YYYY-MM-DD"
+    var today = new Date('20 September 1994 04:20 UTC');
+    return today.toISOString();
 
 }
 
@@ -52,6 +58,11 @@ function getBirthdate() {
 function canDrinkAlcohol(age) {
     //return true if `age` is 21 or over
     //otherwise return false
+    if (age >= 21){
+        return true;
+    }else{
+        return false;
+    }
 
 }
 
@@ -64,7 +75,7 @@ function canDrinkAlcohol(age) {
  */
 function getMovie(moviesArray, index) {
     //return the movie object at the given index in the `moviesArray`
-
+    return moviesArray[index];
 }
 
 /**
@@ -86,7 +97,9 @@ function getMovie(moviesArray, index) {
 function getMovieCitation(movie) {
     //return a citation in the format:
     // title (year-released, distributor)
-
+    var citation = movie.title;
+    citation += "(" + movie.released.substr(0, 4) + ", " + movie.distributor + ")";
+    return citation;
 }
 
 /**
@@ -105,6 +118,13 @@ function getMovieCitation(movie) {
 function findMovieWithMostSales(moviesArray) {
     //return movie object from `moviesArray`
     //that has the largest value for the `sales` property
+    var max = moviesArray[0];
+    for (var i = 0; i < moviesArray.length; i++){
+        if (moviesArray[i].sales > max.sales){
+            max = moviesArray[i];
+        }
+    }
+    return max;
 }
 
 /**
