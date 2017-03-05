@@ -46,3 +46,22 @@ L.tileLayer(osmTiles.url, {
  * http://leafletjs.com/reference-1.0.2.html#marker-bindpopup
  * for details on binding popup content to a marker
  */
+
+var promise = fetch(seattle911API);
+promise.then(function(response){
+    return response.json();
+}).then(function(data){
+    data.forEach(function(element){
+        if (element.latitude && element.longitude){
+            var marker = L.marker([element.latitude, element.longitude]);
+            marker.addTo(map);
+            var type = element.type;
+            var datetime = element.datetime;
+            var address = element.address;
+            marker.bindPopup("[Type]: " + type + " [Time]: " + moment(datetime).fromNow() + " [Address]: " + address);
+        }
+    })
+
+})
+
+
